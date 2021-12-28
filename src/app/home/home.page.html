@@ -32,11 +32,13 @@
         <ion-icon name="share-outline"></ion-icon>
         <p>Partager</p>
       </ion-item>
-      <ion-item>
+
+      <ion-item [button]="" (click)="update(item)">
         <ion-icon name="checkmark-outline"></ion-icon>
         <p>Modifier</p>
       </ion-item>
-      <ion-item button="" (click)="delete(i)">
+
+      <ion-item button="" (click)="delete(item.key)">
         <ion-icon name="trash-outline"></ion-icon>
         <p>Supp</p>
       </ion-item>
@@ -45,7 +47,7 @@
   </ion-card>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="addTask()">
+    <ion-fab-button (click)="addNewItem()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
