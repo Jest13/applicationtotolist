@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
-import {ModalController} from '@ionic/angular';
-import {AddNewTaskPage} from '../add-new-task/add-new-task.page';
-import {TodoService} from '../todo.service';
-import {UpdateTaskPage} from '../update-task/update-task.page';
+import { Component } from '@angular/core';
+import { AlertController, ModalController } from '@ionic/angular';
+import { AddNewTaskPage } from '../add-new-task/add-new-task.page';
+import { TodoService } from '../todo.service';
+import { UpdateTaskPage } from '../update-task/update-task.page';
 
 @Component({
   selector: 'app-home',
